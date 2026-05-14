@@ -1,0 +1,365 @@
+﻿/* ===== 1. CORE RESET & LAYOUT ===== */
+html, body {
+    height: 100%;
+    margin: 0;
+    /* This neutral background prevents blue bleed-through between sections */
+    background-color: #f5f5f5 !important; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== 2. LOGO BAR (WHITE SECTION) ===== */
+.navbar-inverse {
+    background-color: #ffffff !important;
+    border: none !important;
+    margin-bottom: 0 !important;
+    padding: 10px 0 !important;
+    min-height: 80px;
+}
+
+.navbar-header {
+    margin: 0 !important;
+}
+
+.logo-img {
+    height: 60px; /* Adjust based on your logo's height */
+    width: auto;
+    display: block;
+}
+
+/* Logout Button Styling */
+.right-div {
+    padding: 15px 0;
+}
+
+.btn-danger {
+    background-color: #d9534f !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: 700 !important;
+}
+
+/* ===== 3. NAVIGATION MENU (GOLDEN BORDER) ===== */
+   .menu-section {
+            background-color: #ffffff !important;
+            margin-top: 0 !important; 
+            border-bottom: 5px solid rgb(225, 161, 25) !important;
+            width: 100%;
+            position: relative;
+            z-index: 99;
+            box-shadow: none !important; /* Explicitly removed shadow */
+        }
+
+/* Navigation Links Alignment */
+#menu-top li a {
+    color: rgb(225, 161, 25) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    padding: 15px 18px !important;
+    margin: 8px 3px !important;
+    border-radius: 8px !important;
+    transition: 0.3s all ease;
+}
+/* 1. RESET BODY & HTML BACKGROUND */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5 !important; /* Prevents dark bleed-through */
+}
+
+/* 2. LOGO SECTION FIX */
+.navbar-inverse {
+    background-color: #ffffff !important;
+    border: none !important;
+    margin-bottom: 0 !important; /* Critical: removes bottom space */
+    padding-bottom: 0 !important;  /* Critical: removes bottom padding */
+    min-height: 70px !important;
+}
+
+.navbar-header {
+    margin: 0 !important;
+    padding: 10px 0 !important;
+}
+
+.logo-img {
+    height: 55px; /* Adjust height to fit snugly */
+    width: auto;
+}
+
+/* 3. NAVIGATION MENU SECTION FIX */
+   .menu-section {
+            background-color: #ffffff !important;
+            margin-top: 0 !important; 
+            border-bottom: 5px solid rgb(225, 161, 25) !important;
+            width: 100%;
+            position: relative;
+            z-index: 99;
+            box-shadow: none !important; /* Explicitly removed shadow */
+        }
+
+
+/* Navigation Buttons Styling */
+#menu-top li a {
+    color: rgb(225, 161, 25) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    padding: 12px 20px !important;
+    margin: 5px 2px !important;
+    border-radius: 8px !important;
+    transition: 0.3s all ease;
+}
+
+/* Active/Hover State (Matches your Gold Box image) */
+#menu-top li a:hover, 
+#menu-top li a.menu-top-active {
+    background-color: #8c6411 !important; 
+    color: #ffffff !important; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+    
+            box-shadow: none !important; /* Explicitly removed shadow */
+}
+
+/* 4. DASHBOARD CONTENT AREA */
+.content-wrapper {
+    background: linear-gradient(135deg, rgb(225, 161, 25) 0%, #8c6411 100%) !important;
+    margin-top: 0 !important; /* Ensures it touches the gold border */
+    padding-top: 40px;
+}
+
+/* 5. BLACK FOOTER */
+.footer-section {
+    background: #111111 !important;
+    color: #ffffff !important;
+    padding: 20px 0;
+    border-top: 5px solid rgb(225, 161, 25) !important;
+}
+
+/* IMAGE MATCH: Dark Golden Box for Active/Hover states */
+#menu-top li a:hover, 
+#menu-top li a.menu-top-active,
+.open > a { /* Keeps the parent link gold when dropdown is open */
+    background-color: #8c6411 !important; 
+    color: #ffffff !important; 
+    text-decoration: none !important;
+}
+
+/* ===== 4. DROPDOWN MENU FIX ===== */
+.dropdown-menu {
+    border: none !important;
+    border-top: 4px solid rgb(225, 161, 25) !important;
+    border-radius: 0 0 8px 8px !important;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15) !important;
+    padding: 0 !important;
+    background-color: #ffffff !important;
+}
+
+.dropdown-menu > li > a {
+    padding: 12px 20px !important;
+    color: #444 !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: rgb(225, 161, 25) !important;
+    color: #ffffff !important;
+}
+
+/* ===== 5. GLOBAL BLACK FOOTER ===== */
+.footer-section {
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+    background-color: #111111 !important;
+    color: #ffffff !important;
+    padding: 25px 0;
+    border-top: 5px solid rgb(225, 161, 25) !important;
+    text-align: center;
+}
+
+.footer-section a {
+    color: rgb(225, 161, 25) !important;
+}
+
+/* === THE UNIFIED ADMIN SHADOW & HOVER SYSTEM === */
+:root {
+    --gold-primary: rgb(225, 161, 25);
+    --gold-dark: #8c6411;
+    /* This is the specific shadow depth used for both boxes and buttons */
+    --admin-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --admin-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* 1. Navigation Hover Boxes */
+#menu-top li a:hover, 
+#menu-top li a.menu-top-active {
+    background-color: var(--gold-dark) !important; 
+    color: #ffffff !important; 
+    transform: translateY(-2px);
+   
+            box-shadow: none !important; /* Explicitly removed shadow */
+}
+
+/* 2. Content Panels (Data Tables / Forms) */
+.panel { 
+    border-radius: 20px !important; 
+    border: none !important;
+    background: #ffffff;
+    
+            box-shadow: none !important; /* Explicitly removed shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel:hover {
+    box-shadow: var(--admin-shadow-hover) !important;
+}
+
+/* 3. 3D Action Buttons (Submit, Edit, Delete) */
+.btn-submit, .btn-circle, .gen-btn {
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 0 var(--gold-dark), 0 5px 10px rgba(0,0,0,0.2) !important;
+    border: none !important;
+}
+
+.btn-submit:hover, .btn-circle:hover, .gen-btn:hover {
+    transform: translateY(-3px) !important;
+    /* Slightly deeper shadow on hover for that 3D lift */
+    box-shadow: 0 6px 0 var(--gold-dark), var(--admin-shadow-hover) !important;
+}
+
+.btn-submit:active, .btn-circle:active, .gen-btn:active {
+    transform: translateY(1px) !important;
+    box-shadow: 0 2px 0 var(--gold-dark), 0 2px 5px rgba(0,0,0,0.2) !important;
+}
+
+/* 4. Dashboard Stat Cards */
+.back-widget-set {
+    border-radius: 20px !important;
+    box-shadow: var(--admin-shadow) !important;
+    transition: all 0.3s ease;
+}
+
+.back-widget-set:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--admin-shadow-hover) !important;
+}
+/* === THE UNIFIED "MANAGE BOOKS" SHADOW SYSTEM === */
+:root {
+    /* The exact shadow from your panel: 0 15px 35px rgba(0,0,0,0.4) */
+    --panel-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    --gold-accent: rgb(225, 161, 25);
+}
+
+/* 1. FIX THE NAV BAR SHADOW */
+ /* ===== 2. FIXED HEADER (LOGO & NAV) ===== */
+        .navbar-inverse {
+            background-color: #ffffff !important;
+            border: none !important;
+            margin-bottom: 0 !important;
+            padding: 0 !important;
+            min-height: auto !important;
+        }
+
+        .navbar-header {
+            padding: 15px 0 !important;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+
+        /* This forces the menu to touch the logo area with zero gap */
+      .menu-section {
+            background-color: #ffffff !important;
+            margin-top: 0 !important; 
+            border-bottom: 5px solid rgb(225, 161, 25) !important;
+            width: 100%;
+            position: relative;
+            z-index: 99;
+            box-shadow: none !important; /* Explicitly removed shadow */
+        }
+
+
+        /* Navigation Buttons - Matching your Image 1 & 2 */
+        #menu-top li a {
+            color: rgb(225, 161, 25) !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            font-size: 13px !important;
+            padding: 12px 20px !important;
+            margin: 10px 5px !important;
+            border-radius: 10px !important;
+            transition: all 0.3s ease;
+            background: transparent !important;
+        }
+
+        /* Hover & Active States (The Golden Box) */
+        #menu-top li a:hover, 
+        #menu-top li a.menu-top-active {
+            background-color: #8c6411 !important; 
+            color: #ffffff !important; 
+            /* box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important; */
+            transform: translateY(-2px);
+        }
+
+        /* Dropdown Customization */
+        .dropdown-menu {
+            border: none !important;
+            border-top: 4px solid rgb(225, 161, 25) !important;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+            border-radius: 0 0 8px 8px !important;
+            padding: 0 !important;
+        }
+        .dropdown-menu > li > a {
+            padding: 12px 20px !important;
+            font-weight: 600 !important;
+        }
+
+        /* ===== 3. GOLDEN CONTENT AREA ===== */
+        .content-wrapper { 
+            flex: 1 0 auto; 
+            /* Gradient matches the background of your dashboard screenshot */
+            background: linear-gradient(135deg, rgb(225, 161, 25) 0%, #8c6411 100%) !important; 
+            margin-top: 0 !important; 
+            padding: 60px 0;
+        }
+        
+        .header-line { 
+            color: #ffffff !important; 
+            font-weight: 800; 
+            font-size: 28px;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgba(255,255,255,0.3) !important; 
+            padding-bottom: 10px;
+            margin-bottom: 45px;
+        }
+
+/* 2. UNIFY THE PANELS (Forms & Tables) */
+.panel { 
+    border-radius: 20px !important; 
+    border: none !important;
+    background: #ffffff !important;
+    box-shadow: var(--panel-shadow) !important;
+    margin-bottom: 30px;
+}
+
+/* 3. UNIFY THE DASHBOARD WIDGETS */
+.back-widget-set {
+    background-color: #ffffff !important;
+    border-radius: 20px !important; 
+    box-shadow: var(--panel-shadow) !important;
+    border: none !important;
+}
+
+/* 4. SYNC THE NAV HOVER BOXES */
+#menu-top li a:hover, 
+#menu-top li a.menu-top-active {
+    background-color: #8c6411 !important; 
+    color: #ffffff !important; 
+    transform: translateY(-2px);
+    /* Giving the hover boxes a slightly tighter version of the shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}

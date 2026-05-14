@@ -1,0 +1,471 @@
+﻿
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+html {
+    background: linear-gradient(135deg, rgb(225, 161, 25), #8c6411) fixed !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 28px;
+    background: transparent;
+}
+
+.set-radius-zero { border-radius: 0px; }
+.content-wrapper { margin-top: 40px; min-height: 800px; padding-bottom: 90px; }
+
+.header-line {
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(225, 161, 25) !important;
+    text-transform: uppercase;
+    color: rgb(225, 161, 25);
+}
+/* =============================================================
+   NAVBAR & MENU STYLES
+ ============================================================ */
+/* The Main Container */
+.navbar-inverse {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border-bottom: 4px solid rgb(225, 161, 25) !important;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1) !important;
+    min-height: 90px;
+}
+
+/* The Menu Bar Strip */
+.menu-section {
+    background-color: #ffffff !important; 
+}
+
+/* Navigation Links (Home, Login, Signup, Help) */
+#menu-top a, 
+.navbar-nav > li > a {
+    color: #333333 !important; /* Professional Charcoal */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 30px 15px !important;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.3s all ease;
+}
+
+/* HOVER EFFECT: All links turn gold text on hover */
+#menu-top a:hover, 
+.navbar-nav > li > a:hover,
+.navbar-nav > li.open > a {
+    color: rgb(225, 161, 25) !important;
+    background-color: rgba(225, 161, 25, 0.05) !important;
+}
+
+/* Active Page Style */
+.menu-top-active, .navbar-nav > li.active > a {
+    color: rgb(225, 161, 25) !important;
+    background-color: transparent !important;
+}
+
+/* =============================================================
+   HELP DROPDOWN FIX
+ ============================================================ */
+.dropdown-menu {
+    background-color: #ffffff !important;
+    border: none !important;
+    border-top: 4px solid rgb(225, 161, 25) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+    padding: 0;
+    margin-top: 0;
+}
+
+.dropdown-menu > li > a {
+    color: #444 !important;
+    padding: 12px 20px !important;
+    font-weight: 500;
+    border-bottom: 1px solid #f1f1f1;
+    text-transform: none;
+}
+
+/* Dropdown Hover: Gold background, White text */
+.dropdown-menu > li > a:hover {
+    background-color: rgb(225, 161, 25) !important;
+    color: #ffffff !important;
+    padding-left: 25px !important; /* Slide effect */
+}
+
+    /* =============================================================
+   DASHBOARD STYLES
+ ============================================================ */
+
+.img-comments {
+   border: 3px double #e1e1e1;
+height: 60px;
+
+}
+
+.chat-widget-main {
+    max-height:330px;
+    overflow:auto;
+}
+
+.slide-bdr {
+   border:none;
+}
+.chat-widget-left:after {
+    top: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-top-color: #F70E62;
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+.chat-widget-left {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #F70E62;
+    font-size:12px;
+}
+.chat-widget-right:after {
+    top: 100%;
+    right: 10%;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-top-color: #5AA8CC;
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+.chat-widget-right {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #5AA8CC;
+    font-size:12px;
+}
+
+.chat-widget-name-left {
+   color: #808080;
+    margin-top: 30px;
+    margin-left: 60px;
+    text-align:left;
+}
+
+    .img-left-chat {
+        border:3px double #e1e1e1;
+        float:left;
+        margin-right:30px;
+    }
+     .img-right-chat {
+        border:3px double #e1e1e1;
+        float:right;
+        margin-left:30px;
+    }
+     .chat-widget-main img-right {
+        border:3px double #e1e1e1;
+        float:left;
+    }
+.chat-widget-name-left h4 {
+    font-weight:normal;
+    font-size:11px;
+    
+}
+.chat-widget-name-left h5 {
+    font-weight:normal;
+    font-size:10px;
+}
+.chat-widget-name-right h4 {
+    font-weight:normal;
+    font-size:11px;
+}
+.chat-widget-name-right h5 {
+    font-weight:normal;
+    font-size:10px;
+}
+.chat-widget-name-right {
+    color: #808080;
+    margin-top: 40px;
+    margin-right: 60px;
+    text-align:right;
+}
+
+.recent-users-sec img {
+    max-height:80px;
+    margin:15px;
+}
+
+.back-widget-set {
+    background-color:transparent;
+}
+/* =============================================================
+   FOOTER SECTION
+ ============================================================ */
+.home-footer {
+    background: #111;
+    color: #eee;
+    padding: 50px 0 20px;
+    border-top: 5px solid rgb(225, 161, 25);
+}
+
+.footer-section { /* For Dashboard/Internal pages */
+    background: #111;
+    border-top: 3px solid rgb(225, 161, 25);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:45px;
+}
+
+.eye-btn{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#6B7280;
+    font-size:16px;
+}
+
+.eye-btn:hover{
+    color:#244786;
+}
+
+.navbar-nav > li > a {
+    color: #1e3c72 !important;
+    font-weight: 600;
+    padding: 25px 15px;
+    border-radius: 5px; /* same rounded shape as login button */
+    transition: 0.3s;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+    background: #2a5298 !important;
+    color: #fff !important;
+    border-radius: 5px; /* ensures hover keeps the pill shape */
+    box-shadow: 0 4px 12px rgba(0,0,0,.15); /* optional shadow like login box */
+}
+/* Consistent logo size everywhere */
+/* Force same logo size across all pages */
+.logo-img {
+    width: 160px !important;   /* fixed width */
+    height: auto !important;   /* keep aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+}
+/* PRIMARY THEME COLOR: rgb(225, 161, 25) */
+
+/* 1. The Top Navbar Accent */
+.navbar-inverse {
+    background-color: #fff !important;
+    border-bottom: 3px solid rgb(225, 161, 25) !important;
+}
+
+/* 2. The Main Menu Bar */
+.menu-section {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+#menu-top a {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+#menu-top a:hover {
+    background-color: rgba(0,0,0,0.1) !important;
+}
+/* =============================================================
+   BUTTONS & WIDGETS
+ ============================================================ */
+.btn-primary, .btn-info {
+    background-color: rgb(225, 161, 25) !important;
+    border-color: rgb(200, 140, 20) !important;
+    font-weight: 600;
+}
+
+.btn-primary:hover, .btn-info:hover {
+    background-color: rgb(200, 140, 20) !important;
+}
+
+.panel-heading {
+    background-color: rgb(225, 161, 25) !important;
+    color: white !important;
+    border: none !important;
+}
+/* 4. Headers and Accents */
+.header-line {
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(225, 161, 25) !important;
+    text-transform: uppercase;
+    color: rgb(225, 161, 25);
+}
+
+/* 5. Dashboard Icons/Widgets */
+.back-footer-red {
+    background-color: rgb(225, 161, 25) !important;
+}
+
+/* 6. DataTables & Tables */
+.panel-heading {
+    background-color: rgb(225, 161, 25) !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Mobile Toggle */
+.navbar-toggle {
+    background-color: #ffffff !important;
+    border: 1px solid rgb(225, 161, 25) !important;
+    margin-top: 25px;
+}
+.navbar-toggle .icon-bar {
+    background-color: rgb(225, 161, 25) !important;
+}
+
+/* ===== GLOBAL THEME ===== */
+        html {
+            background: linear-gradient(135deg, rgb(225, 161, 25), #8c6411) fixed !important;
+        }
+        body {
+            background: transparent !important;
+            font-family: 'Poppins', sans-serif !important;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* ===== FORCED WHITE NAVBAR ===== */
+        /* This targets the container and ensures no dark background exists */
+        .navbar-inverse, .navbar-default, .navbar {
+            background-color: #ffffff !important;
+            background-image: none !important; /* Removes Bootstrap gradients */
+            border-bottom: 4px solid rgb(225, 161, 25) !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+            margin-bottom: 0 !important;
+            border-radius: 0 !important;
+            padding: 5px 0 !important;
+        }
+
+        /* Navbar Brand/Logo */
+        .navbar-brand {
+            color: rgb(225, 161, 25) !important;
+            font-weight: 700 !important;
+            font-size: 22px !important;
+        }
+
+        /* Professional Nav Links (Home, Login, Signup, Help) */
+        .navbar-nav > li > a {
+color: rgb(225, 161, 25) !important; /* Changed from #333 to Golden */            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            font-size: 13px !important;
+            padding: 20px 20px !important;
+            background: transparent !important;
+            transition: all 0.3s ease !important;
+        }
+
+        /* Global Hovering Effect */
+        .navbar-nav > li > a:hover, 
+        .navbar-nav > li.active > a,
+        .navbar-nav > li.open > a {
+color: #8c6411 !important; /* Darker gold on hover for readability */            background-color: #f9f9f9 !important; /* Very subtle light bg */
+        }
+
+        /* ===== HELP DROPDOWN FIX ===== */
+        .dropdown-menu {
+            background-color: #ffffff !important;
+            border: none !important;
+            border-top: 4px solid rgb(225, 161, 25) !important;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+            margin-top: 0 !important;
+            padding: 0 !important;
+        }
+
+        .dropdown-menu > li > a {
+color: rgb(225, 161, 25) !important; /* Dropdown text also gold */            padding: 12px 20px !important;
+            font-weight: 500 !important;
+            border-bottom: 1px solid #f1f1f1 !important;
+            transition: all 0.2s ease !important;
+        }
+
+        /* Dropdown Hover State */
+        .dropdown-menu > li > a:hover {
+            background-color: rgb(225, 161, 25) !important;
+            color: #ffffff !important; /* Text turns white on gold background */
+            padding-left: 25px !important; /* Smooth slide effect */
+        }
+
+        /* Fix for the little arrow (caret) */
+        .caret {
+            border-top-color: #333 !important;
+        }
+        .navbar-nav > li > a:hover .caret {
+            border-top-color: rgb(225, 161, 25) !important;
+        }
+
+        /* ===== CAROUSEL ===== */
+        .carousel {
+            margin: 40px auto;
+            border: 6px solid #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+        }
+        .carousel-inner img { height: 450px !important; object-fit: cover; width: 100%; }
+        .carousel-control { background-image: none !important; width: 8%; display: flex; align-items: center; justify-content: center; opacity: 0.8; text-shadow: none; }
+        .carousel-control:hover { opacity: 1; }
+        .carousel-control .fa {
+            background: #fff;
+            color: rgb(225, 161, 25);
+            width: 50px; height: 50px; line-height: 50px;
+            border-radius: 50%; font-size: 20px; text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* ===== CONTENT CARD ===== */
+        .content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .content h3 { color: rgb(225, 161, 25); font-weight: 700; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 20px; }
+
+        /* ===== FOOTER ===== */
+        .home-footer {
+            background: #111; color: #eee; padding: 50px 0 20px;
+            border-top: 5px solid rgb(225, 161, 25);
+        }
+        .home-footer-box h4 { color: rgb(225, 161, 25); font-weight: 700; margin-bottom: 20px; font-size: 16px; }
+        .home-footer-bottom { margin-top: 30px; padding-top: 20px; border-top: 1px solid #333; text-align: center; color: rgb(225, 161, 25); font-size: 12px; }
